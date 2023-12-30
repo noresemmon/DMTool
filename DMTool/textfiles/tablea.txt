@@ -1,0 +1,10 @@
+9
+1 1	    Cracked_Driftglobe 
+2 50	Potion_of_healing
+51 60	Spell_scroll(cantrip)
+61 70	Potion_of_climbing
+71 90	Spell_scroll(1st_level)
+91 94	Spell_scroll(2nd_level)
+95 98	Potion_of_healing(greater)
+99 99   Bag_of_holding
+100 100	Driftglobe

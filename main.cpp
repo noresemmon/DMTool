@@ -44,7 +44,7 @@ int main() {
     char choice;
     do {
         // Open pickpocket file
-        ifstream pickpocket("pickpockettable.txt");
+        ifstream pickpocket("textfiles/pickpockettable.txt");
         if (!pickpocket.is_open()) {
             cout << "Error opening the pickpocket file." << endl;
             return 1; 
@@ -63,13 +63,13 @@ int main() {
         // Open tableread file based on challenge rating
         ifstream tableread;
         if (challengeRating <= 4 && challengeRating >= 0) {
-            tableread.open("challenge0-4.txt");
+            tableread.open("textfiles/challenge0-4.txt");
         } else if (challengeRating <= 10 && challengeRating >= 5) {
-            tableread.open("challenge5-10.txt");
+            tableread.open("textfiles/challenge5-10.txt");
         } else if (challengeRating <= 16 && challengeRating >= 11) {
-            tableread.open("challenge11-16.txt");
+            tableread.open("textfiles/challenge11-16.txt");
         } else {
-            tableread.open("challenge17+.txt");
+            tableread.open("textfiles/challenge17+.txt");
         }
 
         // Check if tableread file is opened successfully
@@ -142,7 +142,7 @@ int main() {
             filename = "commonmagictable.txt";
         }
 
-        tableread.open(filename);
+        tableread.open("textfiles/" + filename);
         if (!tableread.is_open()) {
             cout << "Error opening the tableread file." << endl;
             return 1; 
@@ -210,7 +210,7 @@ int main() {
             filename = "lvl19-20.txt";
         }
 
-        tableread.open(filename);
+        tableread.open("textfiles/" + filename);
 
         if (!tableread.is_open()) {
             cout << "Error opening the tableread file." << endl;
@@ -302,25 +302,25 @@ int main() {
         n.populateExotic(exotic, size);
         exotic.close();
 
-        ifstream npcgen("race.txt");
+        ifstream npcgen("textfiles/race.txt");
         npcgen >> size;
         n.populateRace(npcgen, size);
         n.printRace();
         npcgen.close();
 
-        ifstream personality("personality.txt");
+        ifstream personality("textfiles/personality.txt");
         personality >> size;
         n.populatePersonaility(personality, size);
         n.printPersonality();
         personality.close();
 
-        ifstream speech("speech.txt");
+        ifstream speech("textfiles/speech.txt");
         speech >> size;
         n.populateSpeech(speech, size);
         n.printSpeech();
         speech.close();
 
-        ifstream physicalFeatures("physicalfeatures.txt");
+        ifstream physicalFeatures("textfiles/physicalfeatures.txt");
         physicalFeatures >> size;
         n.populatePhysicalFeatures(physicalFeatures, size);
         n.printPhysicalFeatures();
@@ -424,7 +424,7 @@ int main() {
       int size;  
       cout << endl;
       cout << "|||-GENERATING ENCOUNTER-|||" << endl;
-      tableread.open("encounter.txt");
+      tableread.open("textfiles/encounter.txt");
       tableread >> size;
       r.populateEncounter(tableread, size);
       r.printEncounter();
