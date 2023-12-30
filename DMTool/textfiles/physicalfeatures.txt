@@ -1,7 +1,0 @@
-6
-1 1 Crazy_Hair
-2 2 Body_Modifcation
-3 3 Extreme_Build
-4 4 Missing_Body_Part
-5 5 Scars
-6 6 Disabled

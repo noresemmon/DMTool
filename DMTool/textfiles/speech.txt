@@ -1,9 +1,0 @@
-8
-1 3 Regular
-4 4 Soft_Spoken
-5 5 Boisterous
-6 6 Quick
-7 7 Slow
-8 8 Heavy_Accent/Slang
-9 9 Mumbles/Stutters
-10 10 Foul_Language
